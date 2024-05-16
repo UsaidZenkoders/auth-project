@@ -3,9 +3,8 @@ const app = express();
 const cors = require("cors");
 
 const PORT = 3000;
-const LoginRouter = require("./routes/Login.router");
-const RegisterRouter = require("./routes/Register.router");
-
+const LoginRouter = require("./src/routes/Login.router");
+const RegisterRouter = require("./src/routes/Register.router")
 // app.use(bodyParser.json())
 app.use(cors());
 app.use(express.json());
